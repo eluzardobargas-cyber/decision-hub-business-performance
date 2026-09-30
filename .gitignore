@@ -1,0 +1,29 @@
+# Credenciales y secretos
+.env
+*.env
+.streamlit/secrets.toml
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+
+# Backups locales
+Back-up/
+*BACKUP_PRE_RENAME*/
+
+# Archivos de base de datos y Power BI
+*.backup
+*.pbix
+
+# Archivos temporales y logs
+*.log
+*.tmp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
