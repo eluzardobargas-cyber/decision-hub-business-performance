@@ -61,6 +61,51 @@ This approach prevents operations from being analyzed in isolation: operational 
 
 ---
 
+## Project in Action
+
+The following views illustrate how Decision Hub connects operational decision-making with business analytics within the same environment.
+
+### Operational Workflow — Decision Hub | Operations
+
+The Streamlit application supports the operational workflow from planning and exception management to route execution.
+
+#### Operations Overview
+
+![Decision Hub Operations Overview](assets/images/operations-overview.png)
+
+Operational planning overview with key indicators, fleet utilization, estimated distance, operating time, cost, and generated routes.
+
+#### Exception Management
+
+![Decision Hub Exception Management](assets/images/exception-management.png)
+
+Diagnostic view for orders that could not be assigned under the configured operational constraints, supporting exception analysis and subsequent action.
+
+#### Route Execution
+
+![Decision Hub Route Execution](assets/images/route-execution.png)
+
+Driver-oriented view with geographic visualization of the route and assigned stops, route sharing via WhatsApp for mobile access, and recording of delivery outcomes. The driver can confirm each order as delivered, rejected, or not delivered, providing a reason when applicable.
+
+### Business Performance Analytics — Power BI
+
+The analytical layer complements operational planning with management and executive analysis. The current Power BI implementation includes two developed pages: **Executive Overview** and **Inventory**.
+
+#### Executive Overview
+
+![Decision Hub Executive Overview](assets/images/executive-overview.png)
+
+Interactive executive view of sales, profitability, inventory coverage, and service performance, including month-over-month comparisons and multidimensional business analysis.
+
+#### Inventory Analysis
+
+![Decision Hub Inventory Analysis](assets/images/inventory-analysis.png)
+
+Inventory decision-support view combining inventory value, coverage, critical risk, estimated lost sales, risk evolution, commercial relevance, and product profitability.
+
+---
+
+
 ## Solution Architecture
 
 ```text
@@ -324,14 +369,3 @@ The functional architecture and decision model are designed to evolve into a sol
 Current functionalities and parameters should be interpreted within the demonstration context of the project.
 
 ---
-
-## Coming Next
-
-Visual material will be added to the repository to showcase:
-
-- Decision Hub | Operations;
-- route planning and optimization;
-- operational maps;
-- exception management;
-- Decision Hub – Business Performance dashboard;
-- executive and operational analysis in Power BI.

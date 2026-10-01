@@ -61,6 +61,50 @@ De esta forma, la operación no se analiza de manera aislada: sus resultados pue
 
 ---
 
+## El proyecto en acción
+
+Las siguientes vistas muestran cómo Decision Hub conecta la toma de decisiones operativas con el análisis del negocio dentro de un mismo entorno.
+
+### Flujo operativo — Decision Hub | Operations
+
+La aplicación desarrollada en Streamlit acompaña el flujo operativo desde la planificación y la gestión de excepciones hasta la ejecución de las rutas.
+
+#### Resumen de operaciones
+
+![Resumen de operaciones de Decision Hub](assets/images/operations-overview.png)
+
+Vista general de la planificación operativa con indicadores clave, utilización de la flota, distancia estimada, tiempo operativo, coste y rutas generadas.
+
+#### Gestión de excepciones
+
+![Gestión de excepciones de Decision Hub](assets/images/exception-management.png)
+
+Vista de diagnóstico para los pedidos que no pudieron ser asignados respetando las restricciones operativas configuradas, facilitando el análisis de la excepción y la posterior toma de decisiones.
+
+#### Ejecución de rutas
+
+![Ejecución de rutas de Decision Hub](assets/images/route-execution.png)
+
+Vista orientada al repartidor con representación geográfica de la ruta y las paradas asignadas, posibilidad de compartir la ruta mediante WhatsApp para su consulta desde el móvil y registro del resultado de cada entrega. El repartidor puede confirmar el pedido como entregado, rechazado o no entregado, indicando el motivo cuando corresponda.
+
+### Análisis de Business Performance — Power BI
+
+La capa analítica complementa la planificación operativa con análisis de gestión y visión ejecutiva. La implementación actual en Power BI incluye dos páginas desarrolladas: **Executive Overview** e **Inventory**.
+
+#### Executive Overview
+
+![Executive Overview de Decision Hub](assets/images/executive-overview.png)
+
+Vista ejecutiva interactiva de ventas, rentabilidad, cobertura de inventario y nivel de servicio, incluyendo comparaciones respecto al mes anterior y análisis multidimensional del negocio.
+
+#### Inventory
+
+![Análisis de inventario de Decision Hub](assets/images/inventory-analysis.png)
+
+Vista de apoyo a la decisión sobre inventario que combina valor de inventario, cobertura, riesgo crítico, venta perdida estimada, evolución del riesgo, relevancia comercial y rentabilidad por producto.
+
+---
+
 ## Arquitectura de la solución
 
 ```text
@@ -323,14 +367,3 @@ La arquitectura funcional y el modelo de decisión están preparados para evoluc
 Las funcionalidades y parámetros actuales deben interpretarse dentro del contexto demostrativo del proyecto.
 
 ---
-
-## Próximamente
-
-Se incorporarán al repositorio capturas y material visual de:
-
-- Decision Hub | Operations;
-- planificación y optimización de rutas;
-- mapas operativos;
-- gestión de excepciones;
-- dashboard Decision Hub – Business Performance;
-- análisis ejecutivo y operativo en Power BI.
