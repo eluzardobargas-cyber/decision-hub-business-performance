@@ -91,7 +91,7 @@ def ejecutar_planificacion_operativa(fecha_pedido, generar_demo=False):
     }
 
 def cargar_fechas():
-    return pd.read_sql("""
+    return pd.read_sql_query("""
         SELECT DISTINCT fecha_operativa
         FROM logistica.rutas_generadas
         ORDER BY fecha_operativa DESC
@@ -131,7 +131,7 @@ def cargar_incidencias(fecha):
     """, engine, params={"fecha": fecha})
 
 def cargar_excepciones_planificacion(fecha):
-    return pd.read_sql(
+    return pd.read_sql_query(
         """
         SELECT
             i.id_incidencia,
