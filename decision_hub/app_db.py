@@ -58,8 +58,17 @@ DATABASE_URL = URL.create(
 # ---------------------------------------------------------
 # Motor SQLAlchemy
 # ---------------------------------------------------------
+# pool_pre_ping comprueba si una conexión sigue activa
+# antes de reutilizarla desde el pool.
+#
+# pool_recycle renueva las conexiones que llevan más
+# de 300 segundos abiertas, reduciendo la reutilización
+# de conexiones antiguas en entornos cloud.
+
 engine = create_engine(
     DATABASE_URL,
     echo=False,
     future=True,
+    pool_pre_ping=True,
+    pool_recycle=300,
 )
