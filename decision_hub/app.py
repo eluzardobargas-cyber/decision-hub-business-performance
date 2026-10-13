@@ -1284,7 +1284,7 @@ def crear_mensaje_whatsapp(
     )
 
     url_app = (
-        "http://192.168.1.24:8501"
+        "https://decision-business-performance.streamlit.app/"
         f"?vista=repartidor"
         f"&fecha={fecha}"
         f"&camion={camion_url}"
